@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My React + Bootstrap PWA</title>
-    <!-- 🧩 Progressier manifest goes RIGHT BELOW this line -->
-    <link rel="manifest" href="https://progressier.app/YOUR-ID/manifest.json" />
-    <!-- PROGRESSIER_MANIFEST_GOES_HERE -->
+
+    <!-- Progressier manifest (keep inside <head>) -->
+    <link rel="manifest" href="https://progressier.app/LEuZMZ8JzbLoWR6Z5IBg/progressier.json"/>
   </head>
   <body>
     <div id="root"></div>
-    <!-- 🧩 Progressier script goes RIGHT ABOVE this line -->
-    <script src="https://progressier.app/YOUR-ID/script.js"></script>
-    <!-- PROGRESSIER_SCRIPT_GOES_HERE -->
+
+    <!-- Progressier script (put before your React entry) -->
+    <script defer src="https://progressier.app/LEuZMZ8JzbLoWR6Z5IBg/script.js"></script>
+
+    <!-- Vite/React entry: keep ONLY ONE of these; use the standard Vite path -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
